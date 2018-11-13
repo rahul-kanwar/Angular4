@@ -1,0 +1,18 @@
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/dist/css/bootstrap-reboot.css";
+@import "~bootstrap/dist/css/bootstrap-grid.css";
+
+.person-list { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+}
+.person-list > section { margin: 20px; }
+.form-control-feedback {
+  transform-origin: center 40%;
+  transform: scale(4);
+}
+.clickable {
+  cursor: pointer;
+}
+

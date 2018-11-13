@@ -1,0 +1,16 @@
+<section class="panel panel-primary">
+  <div class="panel-heading">
+    Orders ready to be picked:  <span class="badge">{{ordersLength}}</span>
+  </div>
+  <div class="panel-body">
+    <ng-template #notReadyYet>
+      <p class="alert alert-danger">
+        Our customers are our top priority! Please make sure these orders are picked, packed, and shipped as soon as possible.
+      </p>
+    </ng-template>
+    <p *ngIf="ordersLength; else notReadyYet;" class="alert alert-info">
+      All orders have been taken care of.
+    </p>
+  </div>
+</section> <!-- End of panel -->
+<nw-list-of-orders [ordersInner]="orders"></nw-list-of-orders>
